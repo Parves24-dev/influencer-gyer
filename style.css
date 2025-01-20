@@ -96,7 +96,7 @@ button i{
     /* card */
 main{
     display: grid;
-    grid-template-columns:repeat(auto-fit,329px) ;
+    grid-template-columns:repeat(3,329px) ;
     width: 100%;
     margin: 0 auto;
     gap: 20px;
