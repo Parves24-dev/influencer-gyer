@@ -1,0 +1,209 @@
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+nav ul,a,i{
+    list-style: none;
+    text-decoration:none;
+    display: flex;
+    gap: 20px;
+    color: black;
+    font-size: large;
+}
+
+#menu{
+    display: none;
+}
+#cart{
+    display: none;
+}
+
+nav i{
+    font-size: 24px;
+}
+.logo{
+    font-size: 27px;
+    font-weight: 600;
+
+}
+header{
+    width: 100%;
+    
+}
+header>nav{
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+/* this is hero section  */
+
+
+.hero-section{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bold-text{
+    font-weight: 900;
+    font-size: 3.3rem;
+    width: 582px;
+}
+.light-text{
+    font-weight: 400;
+    opacity:1;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-part img{
+    position: absolute;
+    z-index: 1;
+    height: 400px;
+    width: 420px;
+}
+
+.hero-section button{
+    background-color: rgb(224, 44,109,100%);
+    border-radius: 25px;
+    border: none;
+    padding: 10px 24px;
+    color: aliceblue;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+button i{
+    color: aliceblue;
+
+}
+
+
+    /* card */
+main{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,329px) ;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+
+   
+ 
+}
+.card{
+    height:490px ;
+    width: 329px;
+    background-color: aliceblue;
+    border-radius: 5px;
+  
+    
+
+}
+.card img{
+margin: 12px;
+}
+.card-content{
+    margin:0px 14px;
+    width: 210px;
+    margin-top: -10px;
+}
+
+.card h3 {
+    font-size: 32px;
+}
+.card h4{
+    font-size: 24px;
+    opacity: 1;
+   
+}
+.card p{
+    color: gray;
+    margin-top: -15px;
+}
+
+
+
+@media screen and (max-width:992px) {
+    main{
+        grid-template-columns: repeat(2,329px);
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .bold-text{
+        text-align: center;
+    }
+    .light-text{
+        text-align: center;
+    }
+    .hero-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    nav ul{
+        display: none;
+    }
+    #menu{
+        display: inline;
+    }
+    #cart{
+        display: inline;
+    }
+    .res-nav{
+       display: flex;
+       margin: 0 auto;
+       justify-content: space-between;
+       width: 90%;
+    }
+    .res-nav i{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:576px){
+    main{
+        grid-template-columns: repeat(1,329px);
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .bold-text{
+        text-align: center;
+        font-size: 2rem;
+        width: 350px;
+        
+    }
+    .light-text{
+        text-align: center;
+    }
+    .hero-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+    }
+
+}
