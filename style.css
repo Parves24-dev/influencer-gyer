@@ -139,7 +139,7 @@ margin: 12px;
 
 
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:992px) and (min-width:577px) {
     main{
         grid-template-columns: repeat(2,329px);
     }
@@ -188,12 +188,13 @@ margin: 12px;
     }
     .hero-section{
         flex-direction: column-reverse;
-        text-align: center;
     }
     .bold-text{
         text-align: center;
         font-size: 2rem;
-        width: 350px;
+        width: 90%;
+        margin: 0 auto;
+     
         
     }
     .light-text{
@@ -205,5 +206,23 @@ margin: 12px;
         justify-content: center;
      
     }
+    nav ul{
+        display: none;
+    }
+    #menu{
+        display: inline;
+    }
+    #cart{
+        display: inline;
+    }
+    .res-nav{
+       display: flex;
+       margin: 0 auto;
+       justify-content: space-between;
+       width: 90%;
+    }
+    .res-nav i{
+        font-size: 30px;
+    }gi
 
 }
